@@ -1,0 +1,70 @@
+#opengov {
+    .hero {
+        height: 100vh;
+        background: url(/assets/images/opengov-bg.png);
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .hero-content {
+            margin-top: calc(56px + 5vw);
+            .highlight {
+                background: #88e1dc;
+                padding: 20px 40px;
+                border-radius: 20px;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+        }
+        @media (max-width: 575.98px) {
+            height: auto;
+            padding-bottom: 180px;
+            .hero-content {
+                .highlight {
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+    .section-why {
+        background: rgb(51,51,51);
+        color: white;
+    }
+    .section-who {
+        background-color: #88e1dc;
+        background-image: url(/assets/images/who_opengov.png);
+        background-repeat: no-repeat;
+        background-size: 50vw;
+        background-position-y: bottom;
+        a {
+            padding: 10px 40px;
+            border: 1px solid black;
+            border-radius: 200px;
+            color: black;
+            margin-top: 20px;
+            display: inline-block;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .section-how {
+        background: url(/assets/images/how_opengov.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 50vw;
+        @media (max-width: 575.98px) {
+            background-position: right 6%;
+        }
+    }
+    hr {
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+    }
+    .text-highlight {
+        background: #88e1dc;
+        padding: 5px;
+    }
+    .underline {
+        max-width: 100px;
+        margin: 50px 0px 20px;
+    }
+}
