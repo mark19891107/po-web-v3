@@ -4,6 +4,12 @@
     }
     .direction{
         margin-top: 50px;
+        .title{
+            font-weight: 700;
+        }
+        ol{
+            list-style-type: cjk-ideographic;
+        }
         .reason {
             margin-top: 35px;
             display: flex;
@@ -13,6 +19,7 @@
             h5 {
                 flex: 0 0 150px;
                 font-size: 14px;
+                font-weight: 400;
                 line-height: 21px;
                 @media (max-width: 575.98px) {
                     flex: 1 0 100%;
