@@ -55,13 +55,16 @@
                 text-decoration: none;
             }
         }
+        @media (max-width: 576px) {
+            background-position-x: right;
+        }
     }
     .section-how {
         background: url(/assets/images/how_opengov.png);
         background-position: right;
         background-repeat: no-repeat;
         background-size: 50vw;
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
             background-position: right 6%;
         }
     }
