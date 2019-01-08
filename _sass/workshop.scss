@@ -6,16 +6,21 @@
         background-size: contain;
         background-repeat: no-repeat;
         h2{
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
         .row {
             padding-top: 100px;
         }
-        @media (max-width: 991.98px) {
-            height: auto;
-            background-position: right -180px center;
+        @media (max-width: 1200px) {
+            background-position: right -150px center;
         }
-        @media (max-width: 767.98px) {
+        @media (max-width: 992px) {
+            height: auto;
+            background-position: center bottom;
+            padding-bottom: 300px;
+            background-size: 300px;
+        }
+        @media (max-width: 768px) {
             padding-bottom: 50vw;
             background-size: 50vw;
             background-position: center bottom;
