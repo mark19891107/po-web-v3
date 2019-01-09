@@ -9,12 +9,12 @@ permalink: /po
             <div class="row">
                 <div class="col-12">
                     <h1>
-                        什麼是開放政府聯絡人？
+                        {{site.data.po.what-is-po-network.title}}
                     </h1>
                 </div>
                 <div class="col-lg-5 col-md-8">
                     <p>
-                        開放政府聯絡人的英文是 Participation Officer，我們都稱為「PO」。所有的 PO 形成一個緊密溝通的網絡（PO Network），搭起合作的橋樑，促使各部會之間合作。
+                        {{site.data.po.what-is-po-network.content}}
                     </p>
                 </div>
             </div>
@@ -22,10 +22,10 @@ permalink: /po
                 <div class="col-lg-5 col-md-8">
                     <div class="highlight">
                         <h3>
-                            PO 如何產生？
+                            {{site.data.po.po-network-build-up.title}}
                         </h3>
                         <p>
-                            PO是依據「行政院及所屬各機關開放政府聯絡人實施要點」，由各機關指派至少1人來擔任，通常是公關、綜規、管考或資訊的同仁，也可以由這些人組成一個小組，共同擔任。
+                            {{site.data.po.po-network-build-up.content}}
                         </p>
                     </div>
                 </div>
@@ -37,10 +37,10 @@ permalink: /po
             <div class="row">
                 <div class="offset-lg-2 col-lg-8">
                     <h1 class="inter-section text-center">
-                        PO 要做什麼?
+                        {{site.data.po.what-po-do.title}}
                     </h1>
                     <p>
-                        PO最主要的工作，就是協助公部門聽取不特定大眾的意見，甚至合作規劃政策，不特定大眾最主要的來源可能是廣大網友，但也有可能是比較少上網的民眾。那麼PO該有什麼特質呢？我們建議PO要具備公眾溝通的熱誠、熟悉政策內容、善用網路工具。
+                        {{site.data.po.what-po-do.content}}
                     </p>
                 </div>
             </div>
@@ -53,41 +53,25 @@ permalink: /po
             <div class="row">
                 <div class="col-12 text-center">
                     <h3>
-                        PO 們需要具備哪些技能？
+                        {{site.data.po.skills.title}}
                     </h3>
                     <p class="text-center">
-                        PO 需要花一段時間學習以下的技術，也需要在實踐的過程中逐步內化開放政府的精神
+                        {{site.data.po.skills.content}}
                     </p>
                 </div>
             </div>
             <div class="row justify-content-around">
+                {%- for item in site.data.po.skills.list -%}
                 <div class="col-lg-3 col-md-5 point">
-                    <img src="/assets/images/2 _ 主持.png" alt="">
+                    <img src="/assets/images/{{item.img}}" alt="">
                     <h3>
-                        主持
+                        {{item.title}}
                     </h3>
                     <p>
-                        要討論政策的話，除了網路上的對話，也需要大家見面討論。但是如何在會議中協助大家互相理解，找到可行方案，需要專業的主持輔助。
+                        {{item.content}}
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-5 point">
-                    <img src="/assets/images/2 _ 轉譯.png" alt="">
-                    <h3>
-                        轉譯
-                    </h3>
-                    <p>
-                        PO就像翻譯米糕，協助公部門的同仁聽懂網友的話，也協助網友聽懂公部門的話，畢竟雙方如果對同一件事的理解不同，就談不上溝通了。
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-5 point">
-                    <img src="/assets/images/2 _ 紀錄.png" alt="">
-                    <h3>
-                        記錄
-                    </h3>
-                    <p>
-                        透過文字、影像或聲音，讓政策溝通過程公開透明，除了建立互信，也能追蹤和掌握政策進度，並讓更多人參與。就像透明廚房和產銷履歷，讓大家對食物更安心。
-                    </p>
-                </div>
+                {%- endfor -%}
             </div>
         </div>
     </div>
@@ -96,49 +80,27 @@ permalink: /po
             <div class="row">
                 <div class="col-lg-4 text text-sm-center text-lg-left">
                     <h2 class="inter-section">
-                        PO Network <br class="d-none d-lg-block">怎麼運作？
+                        {{site.data.po.how.title}}
                     </h2>
                     <p class="text-sm-center text-left">
-                        PO Network 在議題發生的時候要聯絡各方 ──
+                        {{site.data.po.how.subtitle}}
                     </p>
                 </div>
                 <div class="col-lg-8 po-tree justify-content-sm-center justify-content-lg-end">
                     <p class="root d-none d-lg-inline">
-                        PO Metwork
+                        {{site.data.po.how.content.title}}
                     </p>
                     <div class="list">
+                        {%- for item in site.data.po.how.content.list -%}
                         <div class="item">
                             <h3 class="title">
-                                對內聯絡
+                                {{item.title}}
                             </h3>
                             <p class="detail">
-                                整合內部意見
+                                {{item.content}}
                             </p>
                         </div>
-                        <div class="item">
-                            <h3 class="title">
-                                對外聯絡
-                            </h3>
-                            <p class="detail">
-                                瞭解社會大眾對這個議題的觀點與期待
-                            </p>
-                        </div>
-                        <div class="item">
-                            <h3 class="title">
-                                縱向聯絡
-                            </h3>
-                            <p class="detail">
-                                上下各級機關的意見
-                            </p>
-                        </div>
-                        <div class="item">
-                            <h3 class="title">
-                                橫向聯絡
-                            </h3>
-                            <p class="detail">
-                                相關部會的立場與執掌範圍
-                            </p>
-                        </div>
+                        {%- endfor -%}
                     </div>
                 </div>
             </div>
@@ -150,38 +112,24 @@ permalink: /po
             <div class="row">
                 <div class="col-12 meeting-text">
                     <h3 class="text-center">
-                        PO Network 運作機制 ： 三級會議
+                        {{site.data.po.meetings.title}}
                     </h3>
                     <p class="text-center">
-                        三級會議是讓PO們互相聯繫的重要機制
+                        {{site.data.po.meetings.content}}
                     </p>
                 </div>
             </div>
             <div class="row justify-content-around">
+                {%- for item in site.data.po.meetings.list -%}
                 <div class="col-lg-3 col-md-5 point meeting">
                     <h3>
-                        季會
+                        {{item.title}}
                     </h3>
                     <p>
-                        每3-4個月，各部會PO的長官聚在一起，是一種向上管理的概念，讓這些長官更清楚PO做了什麼，需要什麼協助。
+                        {{item.content}}
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-5 point meeting">
-                    <h3>
-                        月會
-                    </h3>
-                    <p>
-                        每個月，各部會PO都會聚在一起，聊一聊最近處理了什麼議題，接下來還想處理什麼議題。
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-5 point meeting">
-                    <h3>
-                        協作會議
-                    </h3>
-                    <p>
-                        每個月原則上兩場。議題經過 PO 月會投票後，獲選議題的主辦機關即可開始準備協作會議，其他PO也可以參加。
-                    </p>
-                </div>
+                {%- endfor -%}
             </div>
         </div>
     </div>
@@ -191,11 +139,11 @@ permalink: /po
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center inter-section">
-                        PO Network 小知識
+                        {{site.data.po.qa.title}}
                     </h1>
                 </div>
                 <div class="col-md-6">
-                    {%- for qa in site.data.po.qa -%}
+                    {%- for qa in site.data.po.qa.list -%}
                     {% assign remainder = forloop.index | modulo: 2 %}
                     {%- if remainder == 1 -%}
                     <div class="question">
@@ -209,7 +157,7 @@ permalink: /po
                     {%- endfor -%}
                 </div>
                 <div class="col-md-6">
-                    {%- for qa in site.data.po.qa -%}
+                    {%- for qa in site.data.po.qa.list -%}
                     {% assign remainder = forloop.index | modulo: 2 %}
                     {%- if remainder == 0 -%}
                     <div class="question">
@@ -223,7 +171,7 @@ permalink: /po
                     {%- endfor -%}
                 </div>
                 <div class="col-12">
-                    <p class="text-right">統計截至 107 年 12 月</p>
+                    <p class="text-right">{{site.data.po.qa.update}}</p>
                 </div>
 
             </div>
@@ -234,12 +182,12 @@ permalink: /po
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-3 text-center">
                     <a href="/opengov">
-                        <i class="fas fa-arrow-left"></i> 開放政府
+                        <i class="fas fa-arrow-left"></i> {{site.data.po.link-to-opengov}}
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center">
                     <a href="/collaborative-workshop">
-                        協作會議 <i class="fas fa-arrow-right"></i>
+                        {{site.data.po.link-to-workshop}} <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
