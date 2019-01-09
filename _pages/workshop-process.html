@@ -9,7 +9,7 @@ layout: default
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>
-                        協作會議流程
+                        {{site.data.workshop-process.title}}
                     </h2>
                 </div>
             </div>
@@ -17,7 +17,7 @@ layout: default
     </div>
     <div class="section section-end">
         <div class="container">
-            {%- for process in site.data.workshop-process.process -%}
+            {%- for process in site.data.workshop-process.list -%}
             <div class="process">
                 <div class="row">
                     <div class="col-12 text-center">
