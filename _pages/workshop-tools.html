@@ -9,7 +9,7 @@ layout: default
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>
-                        會議工具
+                        {{site.data.workshop-tools.title}}
                     </h2>
                 </div>
             </div>
@@ -18,51 +18,21 @@ layout: default
     <div class="section section-end section-tools">
         <div class="container">
             <div class="row justify-content-around">
+                {%- for item in site.data.workshop-tools.list -%}
+                {%- if item.column == 1 -%}
                 <div class="col-lg-5 col-md-6 tool text-center">
-                    <h2>
-                        逐字稿
-                    </h2>
-                    <p>
-                        逐字稿，是把會議中所有的發言盡可能完整地記錄下來。透過逐字稿，所有關心議題的人都能在會議後了解當天完整的討論過程。同時，也能看見不同利害關係人如何在會議中釐清彼此的需求。除了可以讓大家了解議題討論脈絡，公開上網的逐字稿也能減少未來針對同一議題重複討論的狀況；如實呈現的逐字稿，也能作為事後查驗的基礎，避免與會者被誤會為必定支持會議結論。
-                    </p>
-                </div>
-                <div class="col-lg-5 col-md-6 tool text-center">
-                    <h2>
-                        直播
-                    </h2>
-                    <p>
-                        直播，是比逐字稿更為完整、即時的紀錄方式。透過公開影音，讓關心議題的人能即時參與、了解會議的進行狀況，也能將他們的意見匯集立即傳送回會議中，幫助更多有興趣的朋友即時加入。會後留在網上的直播影像，同樣能成為還原會議過程、呈現討論情境的資料，但需要花費較多時間觀看；值得注意的是，直播可能讓部分與會者有「作秀」的動機，而影響會議的進行。
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-around">
+                {%- else -%}
                 <div class="col-lg-11 col-md-12 tool text-center tool-2column">
+                {%- endif -%}
                     <h2>
-                        工具單
-                    </h2>
-                    <p>工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具工具</p>
-                    <img class="img-fluid" src="/assets/images/toolsheet.png" alt="">
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-lg-5 col-md-6 tool text-center">
-                    <h2>
-                        sli.do
+                        {{item.title}}
                     </h2>
                     <p>
-                        Sli.do是輔助會議的工具。在Sli.do上可以讓與會者匿名留言，協助不方便公開發言的人說出他們的想法；透過匿名的按讚機制，也能幫助大家聚焦到彼此都認為重要的問題，協助收攏問題。付費版的Sli.do還能讓大家展開討論，或是在會議上發起投票。
+                        {{item.content}}
                     </p>
-                    <img class="img-fluid" src="/assets/images/slido.png" alt="">
+                    <img class="img-fluid" src="/assets/images/{{item.img}}" alt="">
                 </div>
-                <div class="col-lg-5 col-md-6 tool text-center">
-                    <h2>
-                        pol.is
-                    </h2>
-                    <p>
-                        Pol.is是線上的意見收集工具，透過大眾提出自己的觀點、看法，並對其它人的觀點表態，Pol.is主要使用演算法來將大家的意見進行分群，方便用視覺化的方式看見網路意見分歧的幾個大群組，以及彼此之間都非常同意的觀點，進一步就能作為議程設定的參考。
-                    </p>
-                    <img class="img-fluid" src="/assets/images/polis.png" alt="">
-                </div>
+                {%- endfor -%}
             </div>
         </div>
     </div>
