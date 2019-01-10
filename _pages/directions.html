@@ -9,14 +9,14 @@ layout: default
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>
-                        行政院及所屬各部會開放政府聯絡人實施要點
+                        {{site.data.directions.title}}
                     </h2>
                     <p class="text-center date">
-                        發布日期：{{site.data.directions.update_date}}
+                        {{site.data.directions.update_date}}
                     </p>
                 </div>
             </div>
-            {%- for direction in site.data.directions.directions -%}
+            {%- for direction in site.data.directions.list -%}
             <div class="direction">
                 <div class="row justify-content-center">
                     <div class="col-lg-1">
@@ -38,7 +38,7 @@ layout: default
 
                         <div class="reason">
                             <h5>
-                                立法理由
+                                {{site.data.directions.reason}}
                             </h5>
                             <p>
                                 {{direction.reason}}
